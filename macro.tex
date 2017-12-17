@@ -1,0 +1,31 @@
+\newcommand{\magic}[4]{
+\fbox{
+\begin{minipage}{0.9\linewidth}
+\textbf{#1}\\
+Difficulty: #2\\
+Mana Points: #3\\
+Description: #4
+\end{minipage}
+}
+}
+
+\newcommand{\monster}[8]{
+\fbox{
+\begin{minipage}{0.95\linewidth}
+\textbf{#1}\\
+HP: #2\\
+Traits: #3\\
+Attacks: #6\\
+DR: #7\\
+\begin{center}
+  \includegraphics[scale=#5]{image/#4}\\  
+\end{center}
+
+Description: #8
+\end{minipage}
+}
+}
+
+\newcommand{\traits}[7]{$Agi$: #1 $Cha$: #2 $Con$: #3 $Dex$: #4 $Int$: #5 $Str$: #6 $Wis$: #7}
+
+\newcommand{\attack}[5]{#1: Att: #2 Dam: #3 #4 Reach: #5}
